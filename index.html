@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비트솔루션</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script defer type="text/javascript"
+    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f4bd0897a2d17dddee6a5130fc4f7fb0"></script>
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="wrapper">
+      <div class="logo">
+        <img src="./img/logo.png" alt="로고">
+      </div>
+      <a href="https://open.kakao.com/o/sJVLqaff">
+        <button class="link-btn">문의하기</button>
+      </a>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="./img/logo.png" alt="로고">
+  </div>
+
+  <!-- Main -->
+  <section class="main">
+    <div class="wrapper">
+      <h1 class="title">회사 소개글</h1>
+      <div class="desc">
+        <p>
+          비트솔루션은 글로벌 투자 정보를 제공하는 웹사이트로, 다양한 분야에 대한 정보를 제공합니다. 코인, 암호화폐, 해외 실시간 속보 등 다양한 정보를 제공하며, 회원들이 자유롭게 글을 쓸 수 있는
+          커뮤니티를 운영하고 있습니다.
+
+          투자는 많은 사람들이 돈을 늘리는 방법 중 하나입니다. 그러나 투자는 높은 수익을 가져다주기도 하지만 그만큼 큰 위험을 동반합니다. 따라서 투자에 대한 정보 수집과 분석, 전략 수립은 매우
+          중요합니다.
+          투자 정보 커뮤니티는 많은 투자자들이 참고하는 유용한 정보를 제공하고 있습니다.
+
+          비트솔루션은 투자 정보에 관심 있는 사용자들을 위해 특화된 서비스를 제공합니다. 매일 업데이트되는 다양한 뉴스와 속보를 통해 최신 정보를 제공하며, 회원들이 작성한 다양한 글도 참고할 수 있습니다.
+          또한, 전문가들의 시장 전망과 국내외 시황을 제공하고, 사용자들끼리 정보를 공유하며 의견을 교환할 수 있는 커뮤니티를 운영합니다.
+
+          투자는 매우 중요한 결정이므로, 비트솔루션과 같은 투자 정보 커뮤니티를 통해 투자에 대한 정보를 충분히 수집하고 분석하여 전략을 수립하시길 권장합니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual -->
+  <div id="visual"></div>
+
+  <!-- Main -->
+  <section class="main">
+    <div class="wrapper">
+      <h1 class="title">대표 인사말</h1>
+      <div class="desc">
+        <p>
+          안녕하세요. 비트솔루션 대표 원유성입니다.
+
+          저희 비트솔루션은 글로벌 투자 정보를 제공하는 웹사이트로, 투자자들에게 다양한 정보와 분석 자료를 제공하여 투자에 대한 더 나은 의사결정을 할 수 있도록 돕고자 합니다.
+
+          저희는 신뢰와 투명성을 최우선으로 생각하며, 사용자들에게 항상 정확하고 신뢰성 있는 정보를 제공하기 위해 최선을 다하고 있습니다. 또한, 회원들의 다양한 의견과 정보를 모아 공유하며, 서로 협력하여
+          더
+          나은 투자 문화를 만들어 가고자 합니다.
+
+          투자는 많은 위험과 함께하는 결정이지만, 비트솔루션을 통해 정확하고 유용한 정보를 수집하고 분석하여 안정적이고 수익성 높은 투자를 할 수 있기를 바랍니다. 감사합니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kakao map -->
+  <div id="map"></div>
+
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="warpper">
+      <p>
+        대표 : 원유성 / 주소 : 대구광역시 남구 성당로 142, 상가201-C05호(대명동, 아이파크)<br>
+        이메일 : wym235@naver.com / 대표전화 010-7125-8968 / 평일 : 10:00 ~ 19:00
+      </p>
+      <p>copyright(c) 2023 리버스 all rights reserved. contact webmaster for more information.</p>
+    </div>
+  </footer>
+
+  <script>
+    const container = document.querySelector('#map'); //지도를 담을 영역의 DOM 레퍼런스
+    let options = { //지도를 생성할 때 필요한 기본 옵션
+      center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+      level: 3 //지도의 레벨(확대, 축소 정도)
+    };
+    let map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+  </script>
+
+</body>
+
+</html>
